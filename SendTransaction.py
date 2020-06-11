@@ -28,6 +28,7 @@ def currentSlot():
     reg= re.compile(regex)
 
     CurrentSlot = reg.findall(res)
+    print(CurrentSlot)
     if CurrentSlot:
        CurrentSlot = CurrentSlot[0]
        CurrentSlot =CurrentSlot.replace('}','')
